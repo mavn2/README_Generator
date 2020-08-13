@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mavn2/README_Generator/issues"
   },
-  "homepage": "https://github.com/mavn2/README_Generator#readme"
+  "homepage": "https://github.com/mavn2/README_Generator#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
 }
