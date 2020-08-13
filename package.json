@@ -1,0 +1,19 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "PKG tracking required dependencies for README Generator assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mavn2/README_Generator.git"
+  },
+  "author": "Max Nicolai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mavn2/README_Generator/issues"
+  },
+  "homepage": "https://github.com/mavn2/README_Generator#readme"
+}
