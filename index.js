@@ -1,6 +1,6 @@
 //Dependencies
-var inquirer = require ("inquirer") 
-var fs = require ("fs")
+const inquirer = require("inquirer") 
+const fs = require("fs")
 
 //Array of questions presented to user through inquirer
 inquirer
@@ -13,7 +13,7 @@ inquirer
     {
       type: "input",
       message: "Describe It!",
-      name: "des"
+      name: "desc"
     },
     {
       type: "input",
@@ -56,11 +56,15 @@ inquirer
       message: "Enter Your Email!",
       name: "email"
     },
-])
+  ])
   .then(function(response){
     writeRM(response)
-  })
-
-  function writeRM(response){
-    console.log(response.title)
-  }
+  });
+//Writes information from response to readme: probably splitting into sub functions 
+function writeRM(response){
+  fs.appendFile('README.md', `## ${response.title}`, err => {
+    if(err){
+      console.log('Problem!');
+    }
+  });
+};
