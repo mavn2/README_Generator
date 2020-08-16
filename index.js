@@ -57,29 +57,44 @@ inquirer
       name: "email"
     },
   ])
-  .then(function(response){
-    writeRM(response)
+  .then(async function(response, text){
+    text = await createRM(response)
+    writeRM(text);
   });
-//Add function to check for complete inputs
+//Function to create template literal as var:
+function createRM(response){
+ const text = `## ${response.title}
+## Description
+${response.desc}
+
+## Installation
+${response.install}
+
+## Usage
+${response.use}
+
+## License
+Use of this application is goverened by the ${response.license} license.
+
+## Contributing
+${response.contrib}
+
+## Tests
+${response.test}
+
+## Questions
+If you have any further questions, you can contact me at ${response.email}. If you'd like to connect with me on GitHub, my user profile is [${response.git}](${response.git}`
+
+  return text;
+}
+//Writing README text in variable, to work around/without indentation-lighter weight than installing npm package to do remove indents in text, as considered-use fn? to create
 
 //Writes information from response to readme
-function writeRM(response){
-  fs.writeFile('README.md', 
-  `## ${response.title}
+function writeRM(text){
 
-   ## Description
-   ${response.desc}
-   
-   ## Installation
-   ${response.install}
-
-   ## Useage
-   ${response.install}
-   `, 
-  
-  err => {
-    if(err){
-      console.log('Problem!');
-    }
-  });
+  fs.writeFile('README.md', text, err => {if(err) {console.log('Error creating Readme!')}})
+  //fs.appendFile('README.md', '## Description /n/', err => {if(err) {console.log('Error creating Readme!')}})
+ // fs.appendFile('README.md', `${response.desc}
+  //`,err => {if(err) {console.log('Error creating Readme!')}})
 };
+
