@@ -61,29 +61,37 @@ inquirer
     text = await createRM(response)
     writeRM(text);
   });
+
 //Function to create template literal as var:
 function createRM(response){
  const text = `## ${response.title}
 ## Description
+
 ${response.desc}
 
 ## Installation
+
 ${response.install}
 
 ## Usage
+
 ${response.use}
 
 ## License
+
 Use of this application is goverened by the ${response.license} license.
 
 ## Contributing
+
 ${response.contrib}
 
 ## Tests
+
 ${response.test}
 
 ## Questions
-If you have any further questions, you can contact me at ${response.email}. If you'd like to connect with me on GitHub, my user profile is [${response.git}](${response.git}`
+
+If you have any further questions, you can contact me at ${response.email}. If you'd like to connect with me on GitHub, my user profile is [${response.git}](${response.git})`
 
   return text;
 }
