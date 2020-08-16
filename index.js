@@ -57,7 +57,8 @@ inquirer
       name: "email"
     },
   ])
-  .then(async function(response, text){
+  .then(async function(response, text, badge){
+    getBadge(response)
     text = await createRM(response)
     writeRM(text);
   });
@@ -66,6 +67,23 @@ inquirer
 function writeRM(text){
   fs.writeFile('README.md', text, err => {if(err) {console.log('Error creating Readme!')}})
 };
+
+//Gets badge link for relevant license
+function getBadge(response){
+  let lic = response.license
+  switch (lic){
+    case 'MIT':
+      badge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
+      break;
+    case "GNU GPLv3":
+      badge = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)'
+      break;
+    case 'Mozilla Public License 2.0':
+      badge = '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)'
+  }
+  console.log(`let's ${badge}`)
+  return badge;
+}
 
 //Function to create template literal as var:
 function createRM(response){
@@ -102,8 +120,4 @@ If you have any further questions, you can contact me at ${response.email}. If y
   return text;
 }
 
-//Writes information from response to readme
-function writeRM(text){
-  fs.writeFile('README.md', text, err => {if(err) {console.log('Error creating Readme!')}})
-};
 
