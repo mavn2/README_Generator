@@ -60,9 +60,24 @@ inquirer
   .then(function(response){
     writeRM(response)
   });
-//Writes information from response to readme: probably splitting into sub functions 
+//Add function to check for complete inputs
+
+//Writes information from response to readme
 function writeRM(response){
-  fs.appendFile('README.md', `## ${response.title}`, err => {
+  fs.writeFile('README.md', 
+  `## ${response.title}
+
+   ## Description
+   ${response.desc}
+   
+   ## Installation
+   ${response.install}
+
+   ## Useage
+   ${response.install}
+   `, 
+  
+  err => {
     if(err){
       console.log('Problem!');
     }
