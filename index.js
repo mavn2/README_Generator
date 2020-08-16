@@ -59,7 +59,8 @@ inquirer
   ])
   .then(async function(response, text, badge){
     getBadge(response)
-    text = await createRM(response)
+    badge = await getBadge(response)
+    text = await createRM(response, badge)
     writeRM(text);
   });
 
@@ -81,13 +82,13 @@ function getBadge(response){
     case 'Mozilla Public License 2.0':
       badge = '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)'
   }
-  console.log(`let's ${badge}`)
   return badge;
 }
 
 //Function to create template literal as var:
-function createRM(response){
- const text = `# ${response.title}
+function createRM(response, badge){
+  //Indents ommited in following lines to preserve formatting
+  const text = `# ${response.title}            ${badge}
 
 ## Description
 
