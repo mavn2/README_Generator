@@ -1,60 +1,68 @@
 //Dependencies
-const inquirer = require("inquirer") 
-const fs = require("fs")
+const inquirer = require('inquirer') 
+const fs = require('fs')
 
 //Array of questions presented to user through inquirer
 inquirer
   .prompt([
     {
-      type: "input",
-      message: "Name Your Project!",
-      name: "title"
+      type: 'input',
+      message: 'Name Your Project!',
+      name: 'title',
+      default: 'Untitled Project'
     },
     {
-      type: "input",
-      message: "Describe It!",
-      name: "desc"
+      type: 'input',
+      message: 'Describe It!',
+      name: 'desc',
+      default: 'Experience is subjective.'
     },
     {
-      type: "input",
-      message: "Instructions For Installation!",
-      name: "install"
+      type: 'input',
+      message: 'Instructions For Installation!',
+      name: 'install',
+      default: 'Just run the file(s).'
     },
     {
-      type: "input",
-      message: "Instructions For Use!",
-      name: "use"
+      type: 'input',
+      message: 'Instructions For Use!',
+      name: 'use',
+      default: `It's self explanatory.`
     },
     {
-      type: "input",
-      message: "Guidelines For Contribution!",
-      name: "contrib"
+      type: 'input',
+      message: 'Guidelines For Contribution!',
+      name: 'contrib',
+      default: 'I walk alone.'
     },
     {
-      type: "input",
-      message: "Instructions For Testing!",
-      name: "test"
+      type: 'input',
+      message: 'Instructions For Testing!',
+      name: 'test',
+      default: 'Just try and break it.'
     },
     {
-      type: "list",
-      message: "Select Your License!",
-      name: "license",
+      type: 'list',
+      message: 'Select Your License!',
+      name: 'license',
       choices: [
-        "MIT",
-        "GNU GPLv3",
-        "Mozilla Public License 2.0"
+        'MIT',
+        'GNU GPLv3',
+        'Mozilla Public License 2.0'
       ],
-      default: "MIT"
+      default: 'MIT'
     },
     {
-      type: "input",
-      message: "Enter Your Github!",
-      name: "git"
+      type: 'input',
+      message: 'Enter Your Github!',
+      name: 'git',
+      default: 'github.com'
     },
     {
-      type: "input",
-      message: "Enter Your Email!",
-      name: "email"
+      type: 'input',
+      message: 'Enter Your Email!',
+      name: 'email',
+      default: 'redacted'
     },
   ])
   .then(async function(response, text, badge){
@@ -76,7 +84,7 @@ function getBadge(response){
     case 'MIT':
       badge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
       break;
-    case "GNU GPLv3":
+    case 'GNU GPLv3':
       badge = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)'
       break;
     case 'Mozilla Public License 2.0':
@@ -88,7 +96,7 @@ function getBadge(response){
 //Function to create template literal as var:
 function createRM(response, badge){
   //Indents ommited in following lines to preserve formatting
-  const text = `# ${response.title}            ${badge}
+  const text = `# ${response.title} ${badge}
 
 ## Description
 

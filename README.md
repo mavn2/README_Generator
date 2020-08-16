@@ -1,29 +1,29 @@
-# testing            [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+#  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-plug
+Experience is subjective.
 
 ## Installation
 
-dfea
+Just run the file(s).
 
 ## Usage
 
-yes!
+It's self explanatory.
 
 ## License
 
-Use of this application is goverened by the GNU GPLv3 license.
+Use of this application is goverened by the MIT license.
 
 ## Contributing
 
-dok
+I walk alone.
 
 ## Tests
 
-please
+Just try and break it.
 
 ## Questions
 
-If you have any further questions, you can contact me at me. If you'd like to connect with me on GitHub, my user profile is [me](me).
+If you have any further questions, you can contact me at redacted. If you'd like to connect with me on GitHub, my user profile is [github.com](github.com).
