@@ -12,16 +12,22 @@ Second, download or clone this repository.
 
 Third, access the files' enclosing folder through your terminal and enter 'npm install' to install the required node modules.
 
+[![Video demonstrating npm installation](https://share.getcloudapp.com/YEuoy9J5)](https://share.getcloudapp.com/YEuoy9J5)
+
 ## Usage
 
 From the enclosing folder, enter 'node index.js' in your terminal to launch the application.
 Enter appropriate text when prompted!
+
+[![Video showing application in use](https://share.getcloudapp.com/7KuL85Z1)](https://share.getcloudapp.com/7KuL85Z1)
+
 Once you've run the application and generated a readme, feel free to further tweak it to suit your needs.  I used the app to create this readme, then added in the images you've seen above.
+
 Be mindful of the fact that, since you will likely be moving the created README file to a relevant folder and because convention does not allow using the project name in the README title, the application will rewrite any README.md files in its directory every time it is run.
 
 ## License
 
-Use of this application is goverened by the MIT license.
+Use of this application is governed by the MIT license.
 
 ## Contributing
 
@@ -34,3 +40,9 @@ Functionality is fairly straightforward, and development on this project was con
 ## Questions
 
 If you have any further questions, you can contact me at maxvnicolai@gmail.com. If you'd like to connect with me on GitHub, my user profile is [github.com/mavn2](github.com/mavn2).
+
+## Credits
+
+The Inquirer module can be found here: [https://www.npmjs.com/package/inquirer](https://www.npmjs.com/package/inquirer).
+
+The license badges were taken from the License Badge Repository [https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba) here, and all credit for them goes to that project's contributors.

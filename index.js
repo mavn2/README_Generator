@@ -66,6 +66,7 @@ inquirer
     },
   ])
   .then(async function(response, text, badge){
+    console.log('README complete!')
     getBadge(response)
     badge = await getBadge(response)
     text = await createRM(response, badge)
