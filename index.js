@@ -112,7 +112,7 @@ ${response.use}
 
 ## License
 
-Use of this application is goverened by the ${response.license} license.
+Use of this application is governed by the ${response.license} license.
 
 ## Contributing
 

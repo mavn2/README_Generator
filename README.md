@@ -14,10 +14,10 @@ Third, access the files' enclosing folder through your terminal and enter 'npm i
 
 ## Usage
 
-From the enclosing folder, enter 'node index.js' in your terminal to launch the application from the file.
+From the enclosing folder, enter 'node index.js' in your terminal to launch the application.
 Enter appropriate text when prompted!
-Once you've run the application and generated a readme, feel free to further tweak it to suit your needs.
-I used the app to create this readme, then added in the images you've seen above.
+Once you've run the application and generated a readme, feel free to further tweak it to suit your needs.  I used the app to create this readme, then added in the images you've seen above.
+Be mindful of the fact that, since you will likely be moving the created README file to a relevant folder and because convention does not allow using the project name in the README title, the application will rewrite any README.md files in its directory every time it is run.
 
 ## License
 
