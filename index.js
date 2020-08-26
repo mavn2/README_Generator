@@ -103,6 +103,15 @@ function createRM(response, badge){
 
 ${response.desc}
 
+## Table of Contents
+*Description
+*Installation
+*Usage
+*License
+*Contributing
+*Tests
+*Questions
+
 ## Installation
 
 ${response.install}
