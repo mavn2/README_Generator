@@ -19,7 +19,7 @@ Third, access the files' enclosing folder through your terminal and enter 'npm i
 From the enclosing folder, enter 'node index.js' in your terminal to launch the application.
 Enter appropriate text when prompted!
 
-[![Video showing application in use](https://share.getcloudapp.com/7KuL85Z1)](https://share.getcloudapp.com/7KuL85Z1)
+[![Video showing application in use](https://user-images.githubusercontent.com/62775874/101969928-21bfe480-3bdc-11eb-8b95-7dc12245b837.gif)
 
 Once you've run the application and generated a readme, feel free to further tweak it to suit your needs.  I used the app to create this readme, then added in the images you've seen above.
 
