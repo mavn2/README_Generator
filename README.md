@@ -19,9 +19,11 @@ Third, access the files' enclosing folder through your terminal and enter 'npm i
 From the enclosing folder, enter 'node index.js' in your terminal to launch the application.
 Enter appropriate text when prompted!
 
-[![Video showing application in use](https://user-images.githubusercontent.com/62775874/101969928-21bfe480-3bdc-11eb-8b95-7dc12245b837.gif)
+![Video showing application in use](https://user-images.githubusercontent.com/62775874/101969928-21bfe480-3bdc-11eb-8b95-7dc12245b837.gif)
 
 Once you've run the application and generated a readme, feel free to further tweak it to suit your needs.  I used the app to create this readme, then added in the images you've seen above.
+
+A video showing the entire process, including the generated file, can be found at [https://drive.google.com/file/d/14YzrG002MsKkahyJ5jzpOMlktSk6FZVI/view?usp=sharing](https://drive.google.com/file/d/14YzrG002MsKkahyJ5jzpOMlktSk6FZVI/view?usp=sharing).
 
 Be mindful of the fact that, since you will likely be moving the created README file to a relevant folder and because convention does not allow using the project name in the README title, the application will rewrite any README.md files in its directory every time it is run.
 
