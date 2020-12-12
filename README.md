@@ -12,17 +12,7 @@ Second, download or clone this repository.
 
 Third, access the files' enclosing folder through your terminal and enter 'npm install' to install the required node modules.
 
-[![Video demonstrating npm installation]]
-<iframe
-  src="https://share.getcloudapp.com/YEuoy9J5?embed=true"
-  width="575"
-  height="400"
-  style="border:none"
-  frameborder="0"
-  allowtransparency="true"
-  allowfullscreen="true"
-  data-frame-src="https://share.getcloudapp.com/YEuoy9J5?embed=true">
-</iframe>
+![Demo of Installation](https://user-images.githubusercontent.com/62775874/101969757-fdafd380-3bda-11eb-8c84-7068bfd3e5fe.gif)
 
 ## Usage
 
